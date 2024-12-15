@@ -1,0 +1,194 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d4cacaf5;
+    background-size: 400% 400%;
+}
+#heading{
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container,#resumePg{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        text-replace: translateY(0);
+    }
+}
+@keyframes scaleUp{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.container:hover,#resumePg:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+form div{
+    margin-bottom: 25px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(82, 79, 79);
+    font-size: 15px;
+}
+
+textarea{
+    height: 140px;
+    border-radius: 15px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;  
+    transition: border-color 0.3s ease-in-out;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-color: azure;
+    outline: none;
+}
+
+button{
+    padding: 15px 30px;
+    margin-top: 25px;
+    border: none;
+    color: azure;
+    font-weight: 600;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 15px;
+    font-size: 15px;
+}
+button:hover{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    transform: scale(1.1);
+}
+.hidden{
+    display: none;
+}
+#resumePg.img{
+    width: 160px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+    margin:auto;
+    border: 2px solid black;
+    transition: border-color 0.3s ease-in-out;
+}
+#resumePg img:hover{
+    border-color: azure;
+    transform: scale(1.1);
+}
+#resumePg h1{
+    text-align: center;
+    color: black;
+}
+#resumePg h3, #resumePg p{
+    margin: 10px 0;
+    padding: 8px;
+    border: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+#resumePg h3:hover, #resumePg p:hover{
+    background-color: azure;
+    border-color: rgb(230, 232, 232);
+    color: black;
+}
+#resumePage .section{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: azure;
+}
+.resume-content h3{
+    text-align: left;
+    color: rgb(198, 207, 207);
+}
+
+.resume-content h1{
+    text-align: center;
+    color: rgb(198, 207, 207);
+}
+@media (max-width: 600px) {
+    .cotainer , #resumePg{
+        width: 95%;
+        padding: 16px;
+    }
+    input[type="text"], input[type="email"], textarea{
+        font-size: 15px;
+    }
+    button{
+        font-size: 16px;
+        padding: 13px 24px;
+    }
+    #resumePg img{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media (max-width: 544px) {
+    .cotainer , #resumePg{
+        width: 100%;
+        padding: 12px;
+    }
+    input[type="text"], input[type="email"], textarea{
+        font-size: 14px;
+    }
+}
+@keyframes gradientbackground {
+    0%{
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+    
+    50%{
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+    
+    100%{
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+}
+@keyframes fadeInText{
+    from{
+        capacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
